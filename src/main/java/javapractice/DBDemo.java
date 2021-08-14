@@ -41,6 +41,11 @@ public class DBDemo {
         {
             Driver driverClass = (Driver)driverList.nextElement();
             System.out.println("  "+driverClass.getClass().getName());
+
+            /*
+             Upto this the connection with
+             payroll_services DataBase is done ..
+             */
         }
     }
 }
