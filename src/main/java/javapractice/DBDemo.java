@@ -10,15 +10,12 @@ public class DBDemo {
         String jdbcURL = "jdbc:mysql://localhost:3306/payroll_services?useSSL = false";
         String userName = "root";
         String password = "niraj";
-        Connection connection ;
+        Connection connection;
 
-        try
-        {
+        try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             System.out.println("Driver Loaded ..");
-        }
-        catch (ClassNotFoundException e)
-        {
+        } catch (ClassNotFoundException e) {
             throw new IllegalStateException("Cannot find the driver in the classpath", e);
         }
         listDrivers();
